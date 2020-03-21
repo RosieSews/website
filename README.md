@@ -20,6 +20,10 @@ The quick and dirty to get this up and running is:
 2. make sure you have the `gatsby-cli` installed for the next step `yarn global add gatsby-cli`. Should also do just as fine installing globally with npm.
 3. Run gatsby develop to spin up a dev environment
 
+## Deployment
+
+1. Current deployment process is bottlenecked. We can rectify this by switching to Netlify (see thoughts below) but for the time being - anytime we have new code to ship - I'll pull down master and deploy to firebase.
+
 ## Short Term goals for the site
 
 - move to an automated deployment suite - currently this is hosted on firebase but I think something like netlify might be better as it has simple github integrations.
