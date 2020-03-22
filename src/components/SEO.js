@@ -93,6 +93,14 @@ const SEO = props => {
       },
       position: 2
     }
+    {
+      "@type": "ListItem",
+      item: {
+        "@id": `${homeURL}/available-supplies`,
+        name: "View Available Supplies"
+      },
+      position: 2
+    }
   ];
 
   let schemaArticle = null;

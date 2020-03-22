@@ -114,6 +114,13 @@ const Toggle = ({ color = "white" }) => {
               Request Supplies
             </Link>
             <Link
+              to="/available-supplies"
+              aria-label="View Available Supplies Page"
+              activeClassName="active"
+            >
+              Available Supplies
+            </Link>
+            <Link
               to="/mask-patterns"
               aria-label="View Patterns Page"
               activeClassName="active"

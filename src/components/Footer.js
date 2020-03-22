@@ -85,9 +85,9 @@ class Footer extends React.Component {
           <ExternalLink
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.deaconess.com/"
+            href="https://coronavirusarmy.org/"
           >
-            deaconess
+            coronavirusarmy.org
           </ExternalLink>
           {"|"}
           <ExternalLink
@@ -104,6 +104,22 @@ class Footer extends React.Component {
             href="https://www.endcoronavirus.org/"
           >
             endcoronavirus.org
+          </ExternalLink>
+          {"|"}
+          <ExternalLink
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://findthemasks.com/"
+          >
+            findthemasks.com
+          </ExternalLink>
+          {"|"}
+          <ExternalLink
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://donatetohospitals.com/"
+          >
+            donatetohospitals.com
           </ExternalLink>
         </FooterLinks>
         <p></p>

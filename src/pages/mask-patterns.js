@@ -75,53 +75,32 @@ const Patterns = ({}) => (
         </div>
         <Hero>
           <SecondaryH1>homemade mask patterns</SecondaryH1>
-
-          <Subline>
-            Save and print the images below to use as a pattern. Follow the
-            directions for construction. More info to come...
-          </Subline>
         </Hero>
         <Content>
           <p>
-            <SectionTitle>Adult homemade mask pattern</SectionTitle>
-            <a href={ADULT_PATTERN} download>
-              <Button big>
-                <FontAwesomeIcon icon={faFileDownload} />
-                DOWNLOAD
-              </Button>
-            </a>
-
-            <img
-              src={ADULT_PATTERN}
-              height={"100%"}
-              width={"100%"}
-              alt="adult pattern and directions"
-            />
-          </p>
-          <p>
-            <SectionTitle>Child homemade mask pattern</SectionTitle>
-            <a href={CHILD_PATTERN} download>
-              <Button big>
-                <FontAwesomeIcon icon={faFileDownload} />
-                DOWNLOAD
-              </Button>
-            </a>
-            <img
-              src={CHILD_PATTERN}
-              height={"100%"}
-              width={"100%"}
-              alt="child pattern"
-            />
-          </p>
-          <p>
             <iframe
+              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fmakershabitatkl%2Fvideos%2F2504854873098703%2F&show_text=0&width=560"
               width="100%"
-              height="400"
-              src="https://www.youtube.com/embed/9tBg0Os5FWQ"
+              height="315"
+              scrolling="no"
               frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowTransparency="true"
+              allowFullScreen="true"
             ></iframe>
+          </p>
+          <p>
+            <SectionTitle>Cloth Mask With Pocket</SectionTitle>
+            <a
+              href={
+                "https://drive.google.com/uc?export=download&id=1p9zJEGtROXhQA2dwHhilPAeKfOYdZGMw"
+              }
+              download
+            >
+              <Button big>
+                <FontAwesomeIcon icon={faFileDownload} />
+                DOWNLOAD PRINTABLE PATTERN & INSTRUCTIONS
+              </Button>
+            </a>
           </p>
         </Content>
       </React.Fragment>

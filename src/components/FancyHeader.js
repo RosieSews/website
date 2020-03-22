@@ -160,6 +160,13 @@ function Header({
             </NavLink>
             <NavLink
               headerColor={headerColor}
+              to="/available-supplies"
+              aria-label="View Available Supplies Page"
+            >
+              Available Supplies
+            </NavLink>
+            <NavLink
+              headerColor={headerColor}
               to="/mask-patterns"
               aria-label="Patterns for homemade masks"
             >
