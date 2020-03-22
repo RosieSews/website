@@ -153,13 +153,6 @@ function Header({
             </NavLink> */}
             <NavLink
               headerColor={headerColor}
-              to="/request-supplies"
-              aria-label="View Request Supplies Page"
-            >
-              Request Supplies
-            </NavLink>
-            <NavLink
-              headerColor={headerColor}
               to="/available-supplies"
               aria-label="View Available Supplies Page"
             >
@@ -167,10 +160,24 @@ function Header({
             </NavLink>
             <NavLink
               headerColor={headerColor}
+              to="/request-supplies"
+              aria-label="View Request Supplies Page"
+            >
+              Request Supplies
+            </NavLink>
+            <NavLink
+              headerColor={headerColor}
               to="/mask-patterns"
               aria-label="Patterns for homemade masks"
             >
-              Mask Patterns
+              Patterns
+            </NavLink>
+            <NavLink
+              headerColor={headerColor}
+              to="/volunteer-signup"
+              aria-label="View Signup Page"
+            >
+              Volunteer
             </NavLink>
           </div>
         </nav>

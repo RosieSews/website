@@ -55,17 +55,15 @@ const IndexPage = ({}) => (
               REQUEST SUPPLIES
             </Button>
           </Link>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://docs.google.com/spreadsheets/d/1MVSknOq9zlv87k_wi_mXH5lMoAzFc0FWRoptluAtEKA/edit?fbclid=IwAR0279tCK1hJR5yswetk5RBOW_CLsF0eOD6Fve5iQis3GlXwWVqoNt9Gvlw#gid=0"
+          <Link
+            to="/volunteer-signup"
             style={{ display: "block", textAlign: "center", margin: "1em" }}
           >
             <Button big>
               <FontAwesomeIcon icon={faSignature} />
               SIGN ME UP TO SEW MASKS
             </Button>
-          </a>
+          </Link>
           <SectionTitle>What is RosieSews?</SectionTitle>
           <p>
             In an effort to help curb medical supply shortages as we battle

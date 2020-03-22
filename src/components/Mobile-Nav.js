@@ -106,13 +106,7 @@ const Toggle = ({ color = "white" }) => {
             >
               Blog
             </Link> */}
-            <Link
-              to="/request-supplies"
-              aria-label="View Request Supplies Page"
-              activeClassName="active"
-            >
-              Request Supplies
-            </Link>
+
             <Link
               to="/available-supplies"
               aria-label="View Available Supplies Page"
@@ -121,11 +115,26 @@ const Toggle = ({ color = "white" }) => {
               Available Supplies
             </Link>
             <Link
+              to="/request-supplies"
+              aria-label="View Request Supplies Page"
+              activeClassName="active"
+            >
+              Request Supplies
+            </Link>
+
+            <Link
               to="/mask-patterns"
               aria-label="View Patterns Page"
               activeClassName="active"
             >
-              Mask Patterns
+              Patterns
+            </Link>
+            <Link
+              to="/volunteer-signup"
+              aria-label="View Signup Page"
+              activeClassName="active"
+            >
+              Volunteer
             </Link>
           </Container>
         </div>

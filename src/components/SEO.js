@@ -100,6 +100,14 @@ const SEO = props => {
         name: "View Available Supplies"
       },
       position: 2
+    },
+    {
+      "@type": "ListItem",
+      item: {
+        "@id": `${homeURL}/volunteer-signup`,
+        name: "Sign Up"
+      },
+      position: 2
     }
   ];
 
