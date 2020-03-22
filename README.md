@@ -22,6 +22,8 @@ The quick and dirty to get this up and running is:
 
 ## Deployment
 
+[This site is powered by Netlify](https://www.netlify.com/)
+
 1. Current deployment process is bottlenecked. We can rectify this by switching to Netlify (see thoughts below) but for the time being - anytime we have new code to ship - I'll pull down master and deploy to firebase.
 
 ## Short Term goals for the site

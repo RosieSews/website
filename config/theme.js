@@ -15,6 +15,7 @@ const colors = {
   primary: "#E73E18", // Color for buttons or links
   secondary: "#F7D300",
   primaryLight: lighten(0.05, "#E73E18"),
+  secondaryLight: lighten(0.05, "#F7D300"),
   bgLight: lighten(0.05, "#0B3160"),
   bg: "#0B3160", // Background color
   grey: {
