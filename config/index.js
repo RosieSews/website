@@ -10,7 +10,7 @@ module.exports = {
   siteBanner: "/social/logo-icon.png", // Your image for og:image tag. You can find it in the /static folder
   favicon: "src/favicon.png", // Your image for favicons. You can find it in the /src folder
   siteDescription:
-    "Rosie Sews goal is to Teach the world to make homemade masks and ship them to those in need.", // Your site description
+    "In an effort to help curb medical supply shortages as we battle COVID19, we’re requesting seamstresses, makers and manufacturers to make masks and other supplies for use by medical professionals, at-risk community members.", // Your site description
   author: "@rosiesewsorg", // Author for schemaORGJSONLD
   siteLogo: "/social/logo-icon.png", // Image for schemaORGJSONLD
 

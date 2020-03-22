@@ -92,7 +92,7 @@ const SEO = props => {
         name: "Request Masks and Other Supplies"
       },
       position: 2
-    }
+    },
     {
       "@type": "ListItem",
       item: {
