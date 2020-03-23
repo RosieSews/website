@@ -1,7 +1,5 @@
 import React from "react";
-import Link from "gatsby-link";
 import styled from "styled-components";
-import { transparentize } from "polished";
 
 const StyledFooter = styled.section`
   color: white;
@@ -40,40 +38,6 @@ const ExternalLink = styled.a`
   text-decoration: none;
   color: white;
   font-weight: bold;
-`;
-
-const FooterLink = styled(Link)`
-  /* text-decoration: none; */
-  margin: 0.5em 1em;
-  /* font-size: 20px; */
-  color: white;
-  &:visited {
-    color: white;
-  }
-  &:focus {
-    color: ${({ theme }) => theme.colors.primary};
-  }
-  &:hover {
-    color: ${({ theme }) => theme.colors.primary};
-  }
-`;
-
-const LogoSerif = styled.div`
-  /* width: 400px; */
-  font-size: 5rem;
-  text-transform: uppercase;
-  line-height: 3.45rem;
-  margin: -1.05rem 0 0;
-`;
-
-const LogoSans = styled.div`
-  /* width: 400px; */
-  font-size: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  font-family: sans-serif;
-  line-height: 40px;
 `;
 
 class Footer extends React.Component {

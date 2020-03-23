@@ -1,29 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
 import styled, { css } from "styled-components";
-import Img from "gatsby-image";
-import logoImg from "../images/logo-icon.png";
-import { LogoImg } from "../components/Logo";
 import FancyHeader from "../components/FancyHeader";
-import ADULT_PATTERN from "../images/A-PATTERN-DIRECTION.jpg";
-import CHILD_PATTERN from "../images/CHILD-MASK-PATTERN.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 
-import {
-  Layout,
-  Article,
-  Wrapper,
-  Button,
-  SectionTitle,
-  Subline
-} from "../components";
-import {
-  StyledH3,
-  SecondaryH2,
-  SecondaryH1
-} from "../components/StyledElements";
+import { Layout, Wrapper, Button, SectionTitle } from "../components";
+import { SecondaryH1 } from "../components/StyledElements";
 
 const Content = styled.div`
   grid-column: 2;
@@ -62,7 +45,7 @@ const Hero = styled.div`
   }
 `;
 
-const Patterns = ({}) => (
+const Patterns = () => (
   <Layout>
     <Wrapper>
       <React.Fragment>

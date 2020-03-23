@@ -12,6 +12,7 @@ module.exports = {
     siteUrl: config.siteUrl + pathPrefix
   },
   plugins: [
+    "gatsby-plugin-eslint",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
     `gatsby-transformer-sharp`,

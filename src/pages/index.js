@@ -1,33 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
-import styled, { css } from "styled-components";
-import Img from "gatsby-image";
-import logoImg from "../images/logo-icon.png";
-import { LogoImg } from "../components/Logo";
-import Header from "../components/Header";
+import { css } from "styled-components";
 import FancyHeader from "../components/FancyHeader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignature } from "@fortawesome/free-solid-svg-icons";
 
-import {
-  Layout,
-  Article,
-  Wrapper,
-  Button,
-  SectionTitle,
-  Subline,
-  Content,
-  Hero,
-  LoadingSubline
-} from "../components";
-import {
-  StyledH3,
-  SecondaryH2,
-  StyledInput
-} from "../components/StyledElements";
+import { Layout, Wrapper, Button, SectionTitle, Content } from "../components";
 
-const IndexPage = ({}) => (
+const IndexPage = () => (
   <Layout>
     <Wrapper>
       <React.Fragment>

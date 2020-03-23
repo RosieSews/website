@@ -1,28 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import { Link, graphql } from "gatsby";
 import styled, { css } from "styled-components";
-import Img from "gatsby-image";
-import logoImg from "../images/logo-icon.png";
-import { LogoImg } from "../components/Logo";
 import FancyHeader from "../components/FancyHeader";
 
-import {
-  Layout,
-  Article,
-  Wrapper,
-  Button,
-  SectionTitle,
-  Header,
-  Content,
-  Hero
-} from "../components";
-import {
-  StyledH3,
-  SecondaryH2,
-  SecondaryH1
-} from "../components/StyledElements";
+import { Layout, Wrapper, Content } from "../components";
+import { SecondaryH1 } from "../components/StyledElements";
 import config from "../../config";
 
 const StyledFrame = styled.iframe`
