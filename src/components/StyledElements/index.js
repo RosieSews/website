@@ -89,7 +89,7 @@ export const StyledSubHeading = styled.p`
   margin: 0;
   text-align: center;
   font-size: 0.9em !important;
-  color: ${props => props.theme.colors.grey.light};
+  color: ${props => props.theme.colors.grey.dark};
   font-style: italic;
   text-transform: lowercase;
 `;

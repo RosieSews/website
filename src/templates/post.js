@@ -8,6 +8,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
 import { StyledLogoImg } from "../components/Logo";
 import logoImg from "../images/logo-icon.png";
+import FancyHeader from "../components/FancyHeader";
 
 import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from "../components";
 import {
@@ -19,13 +20,14 @@ import {
 import config from "../../config";
 
 const Content = styled.article`
-  grid-column: 2;
+  ${"" /* grid-column: 2; */}
   max-width: 1000px;
-  border-radius: 1rem;
+  color: ${props => props.theme.colors.dark.dark};
+  ${"" /* border-radius: 1rem; */}
   padding: 2rem 4.5rem;
-  ${"" /* background-color: ${props => props.theme.colors.bg}; */}
+  background-color: ${props => props.theme.colors.grey.light};
   z-index: 9000;
-  margin-top: -3rem;
+  margin: -3rem auto;
   @media (max-width: ${props => props.theme.breakpoints.tablet}) {
     padding: 3rem 3rem;
   }
@@ -56,8 +58,12 @@ const Title = styled.h1`
 `;
 
 const PostContent = styled.div`
+  text-align: left;
+  margin: 2rem auto;
+`;
+
+const PostMeta = styled.div`
   text-align: center;
-  margin-top: 2rem;
 `;
 
 const BannerCredit = styled.p`
@@ -93,37 +99,40 @@ const Post = ({
 
   return (
     <Layout customSEO>
-      <Wrapper>
-        <SEO postPath={slug} postNode={postNode} article />
-        {/* <Header></Header> */}
-        <Content>
-          <StyledHomeLink to="/">
-            <StyledLogoImg
-              height={"75%"}
-              width={"75%"}
-              src={logoImg}
-              alt={"rosie sews logo"}
-            />
-          </StyledHomeLink>
-          <SecondaryH2>{post.subTitle}</SecondaryH2>
-          <StyledSubHeading>{`Rosie Sews Update | posted: ${post.date}`}</StyledSubHeading>
-          <PostContent>
-            {/* <BannerCredit>{post.bannerCredit}</BannerCredit> */}
-            {/* <BannerImg fluid={post.banner.childImageSharp.fluid} /> */}
-            <MDXProvider components={UI}>
-              <MDXRenderer>{postNode.body}</MDXRenderer>
-            </MDXProvider>
-            {post.date} {` | `} TAGS:{" "}
-            {post.categories.map((cat, i) => (
-              <React.Fragment key={cat}>
-                {!!i && ", "}
-                <Link to={`/categories/${kebabCase(cat)}`}>{cat}</Link>
-              </React.Fragment>
-            ))}
-          </PostContent>
-          <PrevNext prev={prev} next={next} />
-        </Content>
-      </Wrapper>
+      <SEO postPath={slug} postNode={postNode} article />
+      {/* <Wrapper> */}
+      {/* <Header>GO BACK</Header> */}
+      <FancyHeader />
+      {/* <Content> */}
+      <PostContent>
+        {/* <StyledHomeLink to="/">
+          <StyledLogoImg
+            height={"75%"}
+            width={"75%"}
+            src={logoImg}
+            alt={"rosie sews logo"}
+          />
+        </StyledHomeLink> */}
+        <SecondaryH2>{post.subTitle}</SecondaryH2>
+        <StyledSubHeading>{`Rosie Sews Update | last updated: ${post.date}`}</StyledSubHeading>
+        {/* <BannerCredit>{post.bannerCredit}</BannerCredit> */}
+        {/* <BannerImg fluid={post.banner.childImageSharp.fluid} /> */}
+        <MDXProvider components={UI}>
+          <MDXRenderer>{postNode.body}</MDXRenderer>
+        </MDXProvider>
+      </PostContent>
+      <PostMeta>
+        {post.date} {` | `} TAGS:{" "}
+        {post.categories.map((cat, i) => (
+          <React.Fragment key={cat}>
+            {!!i && ", "}
+            <Link to={`/categories/${kebabCase(cat)}`}>{cat}</Link>
+          </React.Fragment>
+        ))}
+        <PrevNext prev={prev} next={next} />
+      </PostMeta>
+      {/* </Content> */}
+      {/* </Wrapper> */}
     </Layout>
   );
 };

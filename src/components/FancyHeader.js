@@ -110,9 +110,9 @@ function Header({
               alignItems: "center",
               img: {
                 marginBottom: 0,
-                maxWidth: "50px",
+                maxWidth: "100px",
                 position: "absolute",
-                borderRadius: "100%",
+                // borderRadius: "100%",
                 background:
                   headerColor === "#fff" ? "rgb(72,167,228, 0.7)" : "#f1f1f1"
               },
@@ -171,6 +171,13 @@ function Header({
               aria-label="Patterns for homemade masks"
             >
               Patterns
+            </NavLink>
+            <NavLink
+              headerColor={headerColor}
+              to="/updates/volunteer-groups"
+              aria-label="View Groups Directory Page"
+            >
+              Groups Directory
             </NavLink>
             <NavLink
               headerColor={headerColor}

@@ -226,6 +226,13 @@ const Footer = styled.footer`
 //         <div css={{ flex: "1 0 auto" }}>
 //         <FancyHeader />
 
+const Main = styled.main`
+  flex: 1 0 auto;
+  min-height: 75vh;
+  margin: 0 1rem;
+  font-size: 16px;
+`;
+
 const Layout = ({ children, customSEO }) => {
   const buildTime = useBuildTime();
 
@@ -235,12 +242,8 @@ const Layout = ({ children, customSEO }) => {
         {!customSEO && <SEO buildTime={buildTime} />}
         <GlobalStyle />
 
-        {children}
-        <FancyFooter>
-          &copy; 2020 by RosieSews.org <br />
-          <Link to={"/about"}>About Us</Link>
-          {/* <span>Last build: {buildTime}</span> */}
-        </FancyFooter>
+        <Main>{children}</Main>
+        <FancyFooter />
         {/* </div> */}
         {/* </div> */}
       </>

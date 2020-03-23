@@ -136,6 +136,13 @@ const Toggle = ({ color = "white" }) => {
             >
               Volunteer
             </Link>
+            <Link
+              to="/updates/volunteer-groups"
+              aria-label="View Groups Directory Page"
+              activeClassName="active"
+            >
+              Groups Directory
+            </Link>
           </Container>
         </div>
       )}
