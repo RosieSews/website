@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
 export default function HTML(props) {
   return (
@@ -7,20 +7,14 @@ export default function HTML(props) {
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta name="google-site-verification" content="2jyng3MpmIVdRhBrabpMAqIcX2M0smhNWLvRvqE0MHg" />
+        <meta
+          name="google-site-verification"
+          content="2jyng3MpmIVdRhBrabpMAqIcX2M0smhNWLvRvqE0MHg"
+        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        {/* <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <script
-            dangerouslySetInnerHTML={{
-              __html: `(window.adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-9677238417081136",
-            enable_page_level_ads: true
-          });`,
-            }}
-          /> */}
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
@@ -36,7 +30,7 @@ export default function HTML(props) {
         {props.postBodyComponents}
       </body>
     </html>
-  )
+  );
 }
 
 HTML.propTypes = {
@@ -45,5 +39,5 @@ HTML.propTypes = {
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
-}
+  postBodyComponents: PropTypes.array
+};

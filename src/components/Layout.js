@@ -1,19 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled, {
-  ThemeProvider,
-  createGlobalStyle,
-  css
-} from "styled-components";
-import { Link, graphql } from "gatsby";
-import { darken, lighten } from "polished";
-// import styled from "styled-components";
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 
 import SEO from "./SEO";
 import theme from "../../config/theme";
 import useBuildTime from "../hooks/useBuildTime";
-import { Article, Wrapper, Button, SectionTitle, Header } from "../components";
-import FancyHeader from "../components/FancyHeader";
 import FancyFooter from "../components/Footer";
 
 const GlobalStyle = createGlobalStyle`
@@ -195,36 +186,6 @@ const GlobalStyle = createGlobalStyle`
     display: none !important;
   }
 `;
-// repeating-linear-gradient(45deg, rgb(122, 122, 122), rgb(122, 122, 122) 10px, rgb(33, 33, 33) 10px, rgb(33, 33, 33) 20px);
-const Footer = styled.footer`
-  color: white;
-  text-align: center;
-  ${"" /* background: ${props => props.theme.colors.primary}; */}
-  padding: 3rem 1rem;
-  span {
-    font-size: 0.75rem;
-  }
-  a {
-    color: white !important;
-    display: block;
-    &:hover {
-      color: ${props => props.theme.colors.secondary} !important;
-    }
-  }
-`;
-
-// <div
-//         css={css`
-//           display: flex;
-//           flex-direction: column;
-//            width: 100%;
-//           min-height: 100vh;
-//           ${"" /* ${backgroundColor && `background: ${backgroundColor}`};
-//           ${backgroundImage && `background-image: url(${backgroundImage})`}; */}
-//         `}
-//       >
-//         <div css={{ flex: "1 0 auto" }}>
-//         <FancyHeader />
 
 const Main = styled.main`
   flex: 1 0 auto;
@@ -241,11 +202,8 @@ const Layout = ({ children, customSEO }) => {
       <>
         {!customSEO && <SEO buildTime={buildTime} />}
         <GlobalStyle />
-
         <Main>{children}</Main>
         <FancyFooter />
-        {/* </div> */}
-        {/* </div> */}
       </>
     </ThemeProvider>
   );
