@@ -42,7 +42,7 @@ const IndexPage = () => (
           >
             <Button big>
               <FontAwesomeIcon icon={faSignature} />
-              SIGN ME UP TO SEW MASKS
+              VOLUNTEER HERE
             </Button>
           </Link>
           <SectionTitle>What is RosieSews?</SectionTitle>
@@ -75,7 +75,10 @@ const IndexPage = () => (
             <a href={"https://www.facebook.com/groups/837899896730511/"}>
               facebook group
             </a>{" "}
-            or send a message to <a href="mailto:rosiesewscovid19@gmail.com" >rosiesewscovid19@gmail.com</a>
+            or send a message to{" "}
+            <a href="mailto:rosiesewscovid19@gmail.com">
+              rosiesewscovid19@gmail.com
+            </a>
           </p>
           <SectionTitle>Donate</SectionTitle>
           <p>
@@ -91,7 +94,13 @@ const IndexPage = () => (
             materials and cover logistics costs associated with shipping.
           </p>
           <SectionTitle>Connect</SectionTitle>
-          <p>Join us and help spread the word on <a href={"https://www.facebook.com/groups/837899896730511/"}>Facebook</a> or <a href={"https://twitter.com/rosiesewsorg"}>Twitter</a></p>
+          <p>
+            Join us and help spread the word on{" "}
+            <a href={"https://www.facebook.com/groups/837899896730511/"}>
+              Facebook
+            </a>{" "}
+            or <a href={"https://twitter.com/rosiesewsorg"}>Twitter</a>
+          </p>
         </Content>
       </React.Fragment>
     </Wrapper>
