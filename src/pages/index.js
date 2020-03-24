@@ -75,7 +75,7 @@ const IndexPage = () => (
             <a href={"https://www.facebook.com/groups/837899896730511/"}>
               facebook group
             </a>{" "}
-            or send a message to <a href={"mailto:rosiesewscovid19@gmail.com"}>rosiesewscovid19@gmail.com</a>
+            or send a message to <a href="mailto:rosiesewscovid19@gmail.com" >rosiesewscovid19@gmail.com</a>
           </p>
           <SectionTitle>Donate</SectionTitle>
           <p>
@@ -100,7 +100,7 @@ const IndexPage = () => (
 
 export default IndexPage;
 
-IndexPage.propTypes = {4
+IndexPage.propTypes = {
   data: PropTypes.shape({
     allMdx: PropTypes.shape({
       nodes: PropTypes.array.isRequired
