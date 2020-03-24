@@ -79,7 +79,6 @@ function Header({
         ${"" /* grid-column: 1 / -1; */}
         flex-shrink: 0;
         background: none;
-        padding: 30px 0 0 0;
         ${bpMaxSM} {
           padding: 35px 0 0 0;
         }
@@ -111,7 +110,6 @@ function Header({
               img: {
                 marginBottom: 0,
                 maxWidth: "100px",
-                position: "absolute",
                 // borderRadius: "100%",
                 background:
                   headerColor === "#fff" ? "rgb(72,167,228, 0.7)" : "#f1f1f1"
