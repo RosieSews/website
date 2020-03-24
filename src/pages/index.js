@@ -100,7 +100,7 @@ const IndexPage = () => (
 
 export default IndexPage;
 
-IndexPage.propTypes = {
+IndexPage.propTypes = {4
   data: PropTypes.shape({
     allMdx: PropTypes.shape({
       nodes: PropTypes.array.isRequired
