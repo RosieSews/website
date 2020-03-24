@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     "header header header"
     ". content .";
   padding: 0 1rem;
+  margin-top: 10px;
 `;
 
 export default Wrapper;
