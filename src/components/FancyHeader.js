@@ -79,9 +79,6 @@ function Header({
         ${"" /* grid-column: 1 / -1; */}
         flex-shrink: 0;
         background: none;
-        ${bpMaxSM} {
-          padding: 35px 0 0 0;
-        }
         background: ${dark ? "#090909" : `${bgColor}` || "none"};
         z-index: 10;
         ${"" /* position: ${fixed ? "fixed" : "absolute"}; */}
