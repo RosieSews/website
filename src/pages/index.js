@@ -75,7 +75,7 @@ const IndexPage = () => (
             <a href={"https://www.facebook.com/groups/837899896730511/"}>
               facebook group
             </a>{" "}
-            or send a message to <a href='mailto&#58;ro&#115;i&#101;s%65%77s&#99;%6&#70;&#37;76&#105;d19&#64;gmai%6C%2&#69;c%6F%6D'>rosies&#101;wsc&#111;&#118;id&#49;9&#64;gm&#97;il&#46;co&#109;</a>
+            or send a message to <a href={"mailto&#58;ro&#115;i&#101;s%65%77s&#99;%6&#70;&#37;76&#105;d19&#64;gmai%6C%2&#69;c%6F%6D"}>rosies&#101;wsc&#111;&#118;id&#49;9&#64;gm&#97;il&#46;co&#109;</a>
           </p>
           <SectionTitle>Donate</SectionTitle>
           <p>
