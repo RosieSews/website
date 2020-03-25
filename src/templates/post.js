@@ -7,7 +7,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
 import FancyHeader from "../components/FancyHeader";
 
-import { Layout, SEO, PrevNext } from "../components";
+import { Layout, SEO, PrevNext, Content, Wrapper } from "../components";
 import {
   components as UI,
   SecondaryH2,
@@ -31,16 +31,20 @@ const Post = ({
 
   return (
     <Layout customSEO>
-      <SEO postPath={slug} postNode={postNode} article />
-      <FancyHeader />
-      <PostContent>
-        <SecondaryH2>{post.subTitle}</SecondaryH2>
-        <StyledSubHeading>{`Rosie Sews Update | last updated: ${post.date}`}</StyledSubHeading>
-        <MDXProvider components={UI}>
-          <MDXRenderer>{postNode.body}</MDXRenderer>
-        </MDXProvider>
-      </PostContent>
-      <PostMeta>
+      <Wrapper>
+        <>
+          <SEO postPath={slug} postNode={postNode} article />
+          <FancyHeader />
+          <Content>
+            <SecondaryH2>{post.subTitle}</SecondaryH2>
+            <StyledSubHeading>{`MasksNOW Update | last updated: ${post.date}`}</StyledSubHeading>
+            <MDXProvider components={UI}>
+              <PostContent>
+                <MDXRenderer>{postNode.body}</MDXRenderer>
+              </PostContent>
+            </MDXProvider>
+            {/* commenting this out until we can fix the category layout plus tags are useless rn */}
+            {/* <PostMeta>
         {post.date} {` | `} TAGS:{" "}
         {post.categories.map((cat, i) => (
           <React.Fragment key={cat}>
@@ -49,7 +53,10 @@ const Post = ({
           </React.Fragment>
         ))}
         <PrevNext prev={prev} next={next} />
-      </PostMeta>
+      </PostMeta> */}
+          </Content>
+        </>
+      </Wrapper>
     </Layout>
   );
 };

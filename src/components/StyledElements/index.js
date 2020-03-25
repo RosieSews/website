@@ -36,10 +36,10 @@ export const SecondaryH2 = styled.h2`
 `;
 
 export const StyledH3 = styled.h3`
-  text-transform: lowercase;
+  ${"" /* text-transform: lowercase; */}
   margin-top: 0px;
   margin-bottom: 0px;
-  text-align: center;
+  ${"" /* text-align: center; */}
   @media (max-width: ${props => props.theme.breakpoints.phone}) {
     ${"" /* padding: 2rem 1.5rem; */}
     font-size: 1.3em;
@@ -52,7 +52,7 @@ export const StyledSubHeading = styled.p`
   font-size: 0.9em !important;
   color: ${props => props.theme.colors.grey.dark};
   font-style: italic;
-  text-transform: lowercase;
+  ${"" /* text-transform: lowercase; */}
 `;
 
 export const StyledInputField = styled.input`

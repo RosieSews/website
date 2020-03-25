@@ -7,6 +7,15 @@ const Wrapper = styled.div`
   grid-template-areas:
     "header header header"
     ". content .";
+  @media (max-width: ${props => props.theme.breakpoints.tablet}) {
+    padding: 0 2rem;
+  }
+  @media (max-width: ${props => props.theme.breakpoints.phone}) {
+    margin: 0;
+    grid-template-areas:
+      "header header header"
+      "content content content";
+  }
   padding: 0 1rem;
   margin-top: 10px;
 `;

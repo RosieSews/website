@@ -71,6 +71,7 @@ function Header({
         ${"" /* position: ${fixed ? "fixed" : "absolute"}; */}
         top: 0;
         ${"" /* font-family: ${fonts.light}; */}
+        grid-area: header;
       `}
     >
       <Container maxWidth={maxWidth} noVerticalPadding>
