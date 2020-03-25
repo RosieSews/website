@@ -9,6 +9,7 @@ import Subline, { LoadingSubline } from "./Subline";
 import Wrapper from "./Wrapper";
 import Content from "./Content";
 import Hero from "./Hero";
+import { PRBlock } from "./PRBlock";
 
 export {
   Article,
@@ -22,5 +23,6 @@ export {
   Wrapper,
   Content,
   Hero,
-  LoadingSubline
+  LoadingSubline,
+  PRBlock
 };

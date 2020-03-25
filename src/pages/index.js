@@ -6,7 +6,14 @@ import FancyHeader from "../components/FancyHeader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignature } from "@fortawesome/free-solid-svg-icons";
 
-import { Layout, Wrapper, Button, SectionTitle, Content } from "../components";
+import {
+  Layout,
+  Wrapper,
+  Button,
+  SectionTitle,
+  Content,
+  PRBlock
+} from "../components";
 
 const IndexPage = () => (
   <Layout>
@@ -101,6 +108,7 @@ const IndexPage = () => (
             </a>{" "}
             or <a href={"https://twitter.com/rosiesewsorg"}>Twitter</a>
           </p>
+          <PRBlock />
         </Content>
       </React.Fragment>
     </Wrapper>
