@@ -31,7 +31,7 @@ const RequestSupplies = props => (
           frameborder="0"
           onmousewheel=""
           width="100%"
-          height="533"
+          height="1400"
         ></StyledFrame>
       </Content>
     </Wrapper>
