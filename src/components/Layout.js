@@ -190,7 +190,7 @@ const GlobalStyle = createGlobalStyle`
 const Main = styled.main`
   flex: 1 0 auto;
   min-height: 75vh;
-  /* margin: 0 1rem; */
+  margin: 0 1rem;
   font-size: 16px;
 `;
 
