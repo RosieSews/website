@@ -3,7 +3,10 @@ import Link from "./Link";
 import styled, { css } from "styled-components";
 import theme from "../../config/theme";
 // import { fonts } from "../lib/typography";
-import logoImg from "../images/logo-icon.png";
+import headerBackground from "../images/header-bg.png"
+import logoImg from "../images/header-rosie.png";
+import logoImgMobile from "../images/header-mobile.png";
+import maskNowImg from "../images/header-masksnow.png"
 import MobileNav from "./Mobile-Nav";
 import Container from "./Container";
 import { bpMaxSM } from "../lib/breakpoints";
@@ -57,7 +60,6 @@ function Header({
   headerColor = "white",
   fixed = false,
   headerImage = true,
-  maxWidth = 720
 }) {
   return (
     <header
@@ -65,8 +67,9 @@ function Header({
         width: 100%;
         ${"" /* grid-column: 1 / -1; */}
         flex-shrink: 0;
-        background: none;
-        background: ${dark ? "#090909" : `${bgColor}` || "none"};
+        background-repeat:repeat-x;
+        background-image:url(${headerBackground});
+        background-size:contain;
         z-index: 10;
         ${"" /* position: ${fixed ? "fixed" : "absolute"}; */}
         top: 0;
@@ -74,13 +77,13 @@ function Header({
         grid-area: header;
       `}
     >
-      <Container maxWidth={maxWidth} noVerticalPadding>
+      <div>
         <nav
           css={{
             // width: "100%",
             display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center"
+            justifyContent: "center",
+            alignItems: "flex-start"
           }}
         >
           <HeaderLink
@@ -94,7 +97,7 @@ function Header({
               alignItems: "center",
               img: {
                 marginBottom: 0,
-                maxWidth: "100px",
+                maxWidth: "300px",
                 // borderRadius: "100%",
                 background:
                   headerColor === "#fff" ? "rgb(72,167,228, 0.7)" : "#f1f1f1"
@@ -107,71 +110,103 @@ function Header({
               }
             }}
           >
-            {headerImage && <img src={logoImg} alt="Rosie Sews Logo" />}{" "}
+            <div css={css`
+              display: none;
+              @media (max-width: ${props => props.theme.breakpoints.phone}) {
+                display: inherit;
+              }
+            `}>
+              <img src={logoImgMobile} alt="Rosie Sews Logo" />
+            </div>
+            <div css={css`
+              @media (max-width: ${props => props.theme.breakpoints.phone}) {
+                display: none;
+              }
+            `}>
+              <img src={logoImg} alt="Rosie Sews Logo" />
+            </div>
             <span>{siteTitle}</span>
           </HeaderLink>
           <div
             css={css`
-              font-size: 16px;
-              line-height: 1.25;
               display: flex;
-              align-items: center;
-              .mobile-nav {
-                display: none;
-                visibility: hidden;
-                ${bpMaxSM} {
-                  display: block;
-                  visibility: visible;
-                }
-              }
-            `}
+              flex-direction: column;
+              justify-content: space-between;
+              `}
           >
-            <MobileNav color={headerColor} />
-            {/* <NavLink
-              headerColor={headerColor}
-              to="/blog/"
-              aria-label="View blog page"
-            >
-              Blog
-            </NavLink> */}
-            <NavLink
-              headerColor={headerColor}
-              to="/available-supplies"
-              aria-label="View Available Supplies Page"
-            >
-              Available Supplies
-            </NavLink>
-            <NavLink
-              headerColor={headerColor}
-              to="/request-supplies"
-              aria-label="View Request Supplies Page"
-            >
-              Request Supplies
-            </NavLink>
-            <NavLink
-              headerColor={headerColor}
-              to="/mask-patterns"
-              aria-label="Patterns for homemade masks"
-            >
-              Patterns
-            </NavLink>
-            <NavLink
-              headerColor={headerColor}
-              to="/updates/volunteer-groups"
-              aria-label="View Groups Directory Page"
-            >
-              Groups Directory
-            </NavLink>
-            <NavLink
-              headerColor={headerColor}
-              to="/volunteer-signup"
-              aria-label="View Signup Page"
-            >
-              Volunteer
-            </NavLink>
+            <div
+              css={css`
+                padding-left: 16px;
+                padding-top: 16px;
+                padding-bottom: 48px;
+                font-size: 16px;
+                line-height: 1.25;
+                display: flex;
+                align-items: center;
+                .mobile-nav {
+                  display: none;
+                  visibility: hidden;
+                  ${bpMaxSM} {
+                    display: block;
+                    visibility: visible;
+                  }
+                }
+              `}
+              >
+              <MobileNav color={headerColor} />
+              {/* <NavLink
+                headerColor={headerColor}
+                to="/blog/"
+                aria-label="View blog page"
+              >
+                Blog
+              </NavLink> */}
+              <NavLink
+                headerColor={headerColor}
+                to="/available-supplies"
+                aria-label="View Available Supplies Page"
+              >
+                Available Supplies
+              </NavLink>
+              <NavLink
+                headerColor={headerColor}
+                to="/request-supplies"
+                aria-label="View Request Supplies Page"
+              >
+                Request Supplies
+              </NavLink>
+              <NavLink
+                headerColor={headerColor}
+                to="/mask-patterns"
+                aria-label="Patterns for homemade masks"
+              >
+                Patterns
+              </NavLink>
+              <NavLink
+                headerColor={headerColor}
+                to="/updates/volunteer-groups"
+                aria-label="View Groups Directory Page"
+              >
+                Groups Directory
+              </NavLink>
+              <NavLink
+                headerColor={headerColor}
+                to="/volunteer-signup"
+                aria-label="View Signup Page"
+              >
+                Volunteer
+              </NavLink>
+            </div>
+            <div css={css`
+              @media (max-width: ${props => props.theme.breakpoints.phone}) {
+                display: none;
+              }
+            `}>
+              <img src={maskNowImg} alt="Masks Now!" css={{maxWidth: "800px", width: "100%"}} />
+            </div>
           </div>
         </nav>
-      </Container>
+      </div>
     </header>
   );
 }
