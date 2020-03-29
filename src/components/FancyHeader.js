@@ -169,6 +169,13 @@ function Header({
             >
               Volunteer
             </NavLink>
+            <NavLink
+              headerColor={headerColor}
+              to="/updates/frequenty-asked-questions"
+              aria-label="Frequenty Asked Questions"
+            >
+              F.A.Q.
+            </NavLink>
           </div>
         </nav>
       </Container>

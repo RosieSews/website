@@ -143,6 +143,13 @@ const Toggle = ({ color = "white" }) => {
             >
               Groups Directory
             </Link>
+            <Link
+              to="/updates/frequenty-asked-questions"
+              aria-label="Frequenty Asked Questions"
+              activeClassName="active"
+            >
+              F.A.Q
+            </Link>
           </Container>
         </div>
       )}
