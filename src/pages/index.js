@@ -5,6 +5,7 @@ import styled, { css } from "styled-components";
 import FancyHeader from "../components/FancyHeader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignature } from "@fortawesome/free-solid-svg-icons";
+import { Twitter, Facebook } from "../components/StyledElements"; //savon40 issue_55 3-29-20
 
 import {
   Layout,
@@ -14,18 +15,6 @@ import {
   Content,
   PRBlock
 } from "../components";
-
-const Twitter = styled.a`
-  &:hover {
-    color: #1DA1F2;
-  }
-`;
-
-const Facebook = styled.a`
-  &:hover {
-    color: #3b5998;
-  }
-`;
 
 const IndexPage = () => (
   <Layout>

@@ -88,3 +88,17 @@ export const components = {
   h3: StyledH3,
   h2: StyledH2
 };
+
+//savon40 issue_55 3-29-20
+export const Twitter = styled.a`
+  &:hover {
+    color: #1DA1F2;
+  }
+`;
+
+//savon40 issue_55 3-29-20
+export const Facebook = styled.a`
+  &:hover {
+    color: #3b5998;
+  }
+`;
