@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 import FancyHeader from "../components/FancyHeader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignature } from "@fortawesome/free-solid-svg-icons";
@@ -14,6 +14,18 @@ import {
   Content,
   PRBlock
 } from "../components";
+
+const Twitter = styled.a`
+  &:hover {
+    color: #1DA1F2;
+  }
+`;
+
+const Facebook = styled.a`
+  &:hover {
+    color: #3b5998;
+  }
+`;
 
 const IndexPage = () => (
   <Layout>
@@ -78,11 +90,8 @@ const IndexPage = () => (
             We’re working on converting maker spaces across the nation into
             supply production sites. If you have contacts with medical fabric
             supply, laser die cut machines or other seemingly helpful resources,
-            please post on our{" "}
-            <a href={"https://www.facebook.com/groups/837899896730511/"}>
-              facebook group
-            </a>{" "}
-            or send a message to{" "}
+            please{" "}<Facebook href={"https://www.facebook.com/groups/837899896730511/"}>
+              visit our Facebook page</Facebook> and post or send a message to{" "}
             <a href="mailto:rosiesewscovid19@gmail.com">
               rosiesewscovid19@gmail.com
             </a>
@@ -103,10 +112,9 @@ const IndexPage = () => (
           <SectionTitle>Connect</SectionTitle>
           <p>
             Join us and help spread the word on{" "}
-            <a href={"https://www.facebook.com/groups/837899896730511/"}>
-              Facebook
-            </a>{" "}
-            or <a href={"https://twitter.com/rosiesewsorg"}>Twitter</a>
+              <Facebook href={"https://www.facebook.com/groups/837899896730511/"}>Facebook</Facebook>
+              {" "}
+            or{" "}<Twitter href={"https://twitter.com/rosiesewsorg"}>Twitter</Twitter>
           </p>
           <PRBlock />
         </Content>
