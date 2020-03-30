@@ -1,3 +1,7 @@
+# This is the old site - DO NOT SUBMIT PR's HERE
+
+We'll leave all of this intact for now but eventually will remove this repo (likely)
+
 # Rosiesews.org
 
 ## Mission
